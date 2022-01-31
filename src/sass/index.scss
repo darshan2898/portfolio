@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+@import "variable";
+@import "mixin";
+
+// html {
+//   font-size: 62.5%;
+// }
+
+.home_body {
+  width: 100%;
+  background: $bgGrey;
+  padding: 8em 0;
+  .card {
+    width: 1050px;
+    background: $whiteOne;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 2em;
+    margin-bottom: 5.8em;
+
+    .top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      .pink {
+        width: 30%;
+        height: 100px;
+        background: $maroonOne;
+      }
+      .main_title {
+        width: 65%;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        h1 {
+          font-size: 2.8rem;
+          text-transform: uppercase;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+          color: $blueOne;
+          margin-bottom: -12px;
+          font-family: $headFont;
+        }
+        p {
+          color: $maroonOne;
+          transition: $three;
+          font-family: $bodyFont;
+          &:hover {
+            color: $blueOne;
+          }
+        }
+      }
+    }
+    .mid {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      .left {
+        width: 30%;
+        .image_cont {
+          width: 100%;
+          background: $lightGrey;
+          img {
+            height: 300px;
+            object-fit: contain;
+          }
+        }
+      }
+      .right {
+        width: 65%;
+        height: auto;
+        background: $lightGrey;
+        padding: 1em;
+        p {
+          line-height: 2rem;
+          text-transform: capitalize;
+          color: #111;
+          font-family: $bodyFont;
+          text-align: justify;
+        }
+      }
+    }
+    .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        width: 30%;
+      }
+      .right {
+        width: 65%;
+        background: $blueOne;
+        padding: 1em;
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          li {
+            color: $lightGrey;
+            margin: 0 0.3em;
+            margin-bottom: 0.5em;
+            letter-spacing: 1px;
+            font-family: $headFont;
+          }
+        }
+      }
+    }
+  }
+}
